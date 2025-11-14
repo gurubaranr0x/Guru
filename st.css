@@ -369,213 +369,139 @@ body {
    CONTACT SECTION PREMIUM
    =========================== */
 
+/* Contact Section */
 .contact-section {
-    padding: 150px 0;
-    text-align: center;
+  width: 100%;
+  padding: 120px 20px;
+  background: #000;
+  color: #ccc;
+  text-align: center;
 }
 
-.contact-title {
-    font-size: 3.4rem;
-    color: #ffffff;
-    margin-bottom: 60px;
-    letter-spacing: 2px;
+.section-title {
+  font-size: 3.3rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+  color: #ddd;
 }
 
-/* Wrapper */
-.contact-wrapper {
-    max-width: 1150px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    flex-wrap: wrap;
+/* Layout */
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* Glass-Boxes */
-.contact-info-box,
 .contact-form {
-    flex: 1;
-    min-width: 350px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 35px;
-    border-radius: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(14px);
-    position: relative;
-    box-shadow:
-        0 0 25px rgba(0, 140, 255, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
-    animation: fadeUp 1s ease forwards;
-    opacity: 0;
+  flex: 1;
+  background: rgba(20, 20, 20, 0.5);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.07);
+  backdrop-filter: blur(10px);
 }
 
-/* Pulse neon border */
-.contact-info-box::before,
-.contact-form::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 22px;
-    padding: 1px;
-    background: linear-gradient(
-        135deg,
-        rgba(48, 6, 108, 0.7),
-        rgba(200, 0, 255, 0.65),
-        rgba(98, 0, 255, 0.7)
-    );
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    animation: borderGlowPurple 4s linear infinite;
+/* Elegant Floating Labels */
+.input-group {
+  position: relative;
+  margin-bottom: 35px;
 }
 
-
-/* Left Side */
-.contact-info-box h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #fff;
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 12px 2px;
+  font-size: 1rem;
+  color: #eee;
+  outline: none;
+  transition: 0.3s ease;
 }
 
-.contact-info-box p {
-    opacity: 0.8;
-    margin-bottom: 25px;
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom: 1px solid #7a4cff; /* subtle purple */
 }
 
-/* Info lines */
-.info-line {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 12px 0;
-    font-size: 1rem;
-    color: #ddd;
-}
-
-.info-line i {
-    color: #00ccff;
-    font-size: 1.3rem;
-}
-
-/* Social */
-.social-flex {
-    margin-top: 25px;
-}
-
-.social {
-    font-size: 1.5rem;
-    margin-right: 15px;
-    color: #e3e3e3;
-    transition: 0.3s;
-}
-
-.social:hover {
-    color: #00e5ff;
-    text-shadow: 0 0 12px #00e5ff;
-}
-
-/* Form Fields Enhanced */
-.input-field {
-    position: relative;
-    margin-bottom: 35px;
-}
-
-.input-field input,
-.input-field textarea {
-    width: 100%;
-    padding: 12px 10px;
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-    outline: none;
-}
-
-.input-field label {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    color: #aaa;
-    pointer-events: none;
-    transition: 0.3s ease;
+.input-group label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 0.9rem;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s ease;
 }
 
 /* Floating effect */
-.input-field input:focus + label,
-.input-field textarea:focus + label,
-.input-field input:valid + label,
-.input-field textarea:valid + label {
-    top: -10px;
-    font-size: 0.8rem;
-    color: #00cfff;
-}
-
-/* Underbar Animation */
-.bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, #008cff, #00f2ff);
-    transition: 0.4s ease;
-}
-
-.input-field input:focus ~ .bar,
-.input-field textarea:focus ~ .bar {
-    width: 100%;
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 0.75rem;
+  color: #b59aff;
 }
 
 /* Send Button */
 .send-btn {
-    margin-top: 10px;
-    width: 100%;
-    padding: 14px;
-    background: linear-gradient(90deg, #008cff, #00eaff);
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    letter-spacing: 2px;
-    transition: 0.3s;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  background: #7a4cff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .send-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 18px #00d7ff;
+  background: #6a3cff;
 }
 
-/* Fade-Up Animation */
-@keyframes fadeUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Contact Info Panel */
+.contact-info {
+  flex: 0.6;
+  background: rgba(20, 20, 20, 0.4);
+  padding: 40px 35px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.07);
+  backdrop-filter: blur(10px);
+  text-align: left;
 }
 
-/* Animated Border Glow */
-@keyframes borderGlow {
-    0% { opacity: 0.4; }
-    50% { opacity: 1; }
-    100% { opacity: 0.4; }
+.contact-info h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #ddd;
 }
 
-/* 3D Tilt Hover */
-.tilt:hover {
-    transform: perspective(900px) rotateX(6deg);
-    transition: 0.4s ease;
+.contact-info p {
+  margin-bottom: 30px;
+  color: #aaa;
 }
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.info-line i {
+  font-size: 1.2rem;
+  color: #9f88ff; /* subtle purple accent */
+}
+
 .footer {
     width: 100%;
     background: #000;
