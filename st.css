@@ -575,3 +575,233 @@ body {
     color: #666;
     margin-top: 30px;
 }
+/* ================================
+   📱 MOBILE RESPONSIVE FIXES
+   ================================ */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    gap: 20px;
+    padding: 10px 20px;
+    top: 20px;
+  }
+  .navbar a {
+    font-size: 12px;
+  }
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .image-circle {
+    width: 160px;
+    height: 160px;
+  }
+  .image-circle img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    padding: 40px 15px;
+  }
+  .about-container {
+    padding: 20px 15px;
+  }
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+  /* SKILLS SECTION */
+  .skills-section {
+    padding: 80px 10px;
+  }
+  .skills-section h2 {
+    font-size: 2.4rem;
+  }
+  .skills-timeline {
+    gap: 30px;
+    padding: 30px 10px;
+  }
+  .skill-item span {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* PROJECT TIMELINE */
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+  .timeline:before {
+    display: none;
+  }
+  .timeline-item {
+    margin: 30px 0;
+  }
+  .timeline-card {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .timeline-card h3 {
+    font-size: 1.2rem;
+  }
+  .timeline-card p {
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT SECTION */
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 25px 20px;
+  }
+
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 10px;
+  }
+  .footer-logo {
+    font-size: 2rem;
+  }
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
+}
+/* ============================================
+   🔥 ULTRA–CLEAN MOBILE REFINEMENTS (GURU EDITION)
+   ============================================ */
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .navbar {
+    gap: 12px;
+    padding: 8px 16px;
+    top: 18px;
+  }
+  .navbar a {
+    font-size: 10px;
+  }
+
+  /* HERO */
+  .hero {
+    padding-top: 70px;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+  .hero p {
+    font-size: 0.75rem;
+  }
+  .image-circle {
+    margin-top: 50px;
+    width: 130px;
+    height: 130px;
+  }
+  .image-circle img {
+    width: 115px;
+    height: 115px;
+  }
+
+  /* ABOUT */
+  .about {
+    padding: 20px 10px;
+  }
+  .about-container {
+    padding: 18px 12px;
+  }
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  .about-container p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  /* SKILLS */
+  .skills-section {
+    padding: 50px 10px;
+  }
+  .skills-section h2 {
+    font-size: 1.9rem;
+  }
+  .skills-timeline {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .skill-item span {
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+
+  /* PROJECT TIMELINE */
+  .timeline-item {
+    margin: 25px 0;
+  }
+  .timeline-card {
+    padding: 16px;
+  }
+  .timeline-card h3 {
+    font-size: 1rem;
+  }
+  .timeline-card p {
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    left: -7px;
+  }
+
+  /* CONTACT FORM */
+  .contact-section {
+    padding: 60px 10px;
+  }
+  .contact-container {
+    gap: 20px;
+  }
+  .contact-form,
+  .contact-info {
+    padding: 18px 15px;
+  }
+  .contact-info h3 {
+    font-size: 1.3rem;
+  }
+  .input-group input,
+  .input-group textarea {
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer-logo {
+    font-size: 1.7rem;
+  }
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+  .footer-socials a {
+    font-size: 1.1rem;
+  }
+}
+
