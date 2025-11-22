@@ -701,124 +701,133 @@ html {
 
 
 
-/* ============================================
-   🔥 ULTRA–CLEAN MOBILE REFINEMENTS (GURU EDITION)
-   ============================================ */
-@media (max-width: 480px) {
 
-  /* NAVBAR */
-  .navbar {
-    gap: 12px;
-    padding: 8px 16px;
-    top: 18px;
-  }
-  .navbar a {
-    font-size: 10px;
+/* ------------------------------
+   GLOBAL MOBILE FIXES
+--------------------------------*/
+@media (max-width: 768px) {
+  
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
   }
 
-  /* HERO */
-  .hero {
-    padding-top: 70px;
+  /* Fix hero section text alignment */
+  .head {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
   }
-  .hero h1 {
-    font-size: 2.4rem;
+
+  .title1 {
+    font-size: 2.2rem;
     line-height: 1.2;
   }
-  .hero p {
-    font-size: 0.75rem;
-  }
-  .image-circle {
-    margin-top: 50px;
-    width: 130px;
-    height: 130px;
-  }
-  .image-circle img {
-    width: 115px;
-    height: 115px;
+
+  .img-circle {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto 0 auto;
   }
 
-  /* ABOUT */
-  .about {
+  /* Fix navbar items overflowing */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  /* Fix skills timeline overflowing sidewards */
+  .timeline-list-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px 10px;
   }
-  .about-container {
-    padding: 18px 12px;
-  }
-  .about h2 {
-    font-size: 1.8rem;
-  }
-  .about-container p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-  }
 
-  /* SKILLS */
-  .skills-section {
-    padding: 50px 10px;
-  }
-  .skills-section h2 {
-    font-size: 1.9rem;
-  }
-  .skills-timeline {
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .skill-item span {
-    padding: 8px 14px;
-    font-size: 0.75rem;
-  }
-
-  /* PROJECT TIMELINE */
-  .timeline-item {
-    margin: 25px 0;
-  }
-  .timeline-card {
-    padding: 16px;
-  }
-  .timeline-card h3 {
-    font-size: 1rem;
-  }
-  .timeline-card p {
-    font-size: 0.8rem;
-    line-height: 1.35;
-  }
   .timeline-dot {
-    width: 14px;
-    height: 14px;
-    left: -7px;
+    margin: 0 auto 10px auto;
   }
 
-  /* CONTACT FORM */
-  .contact-section {
-    padding: 60px 10px;
+  .timeline-date {
+    margin-bottom: 10px;
   }
-  .contact-container {
+
+  .timeline-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Fix contact card */
+  #contact {
+    padding: 30px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
     gap: 20px;
-  }
-  .contact-form,
-  .contact-info {
-    padding: 18px 15px;
-  }
-  .contact-info h3 {
-    font-size: 1.3rem;
-  }
-  .input-group input,
-  .input-group textarea {
-    font-size: 0.9rem;
+    text-align: center;
   }
 
-  /* FOOTER */
-  .footer {
-    padding: 30px 10px;
+  /* Fix chatbot box overlapping */
+  .chatbot-widget {
+    width: 90vw;
+    right: 5vw;
+    bottom: 20px;
   }
-  .footer-logo {
-    font-size: 1.7rem;
+
+  /* Fix widgets/cards overflowing */
+  .card {
+    width: 100%;
+    margin: 0 auto;
   }
-  .footer-tagline {
-    font-size: 0.85rem;
+
+}
+
+@media (max-width: 768px) {
+  #portfolio {
+    padding-top: 120px; /* pushes hero text below navbar */
   }
-  .footer-socials a {
-    font-size: 1.1rem;
+
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
 
+
+/* FORCE contact section to stack on mobile */
+@media (max-width: 768px) {
+    #contact, 
+    .contact-section, 
+    .contact-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    /* Left (form) and right (text box) go full width */
+    .contact-left,
+    .contact-right,
+    .contact-form,
+    .contact-box {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Form fields never overflow */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
