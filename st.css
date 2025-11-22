@@ -698,3 +698,101 @@ html {
 .bot-text.show {
   opacity: 1;
 }
+
+
+
+
+/* === MOBILE RESPONSIVE FIXES === */
+@media (max-width: 768px) {
+    
+    /* Global scaling */
+    body {
+        padding: 0 1rem;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        overflow-x: hidden;
+    }
+
+    /* Fix large headers */
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    /* Images become responsive */
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Sections spacing */
+    section {
+        padding: 2rem 0;
+    }
+
+    /* Navigation fixes */
+    nav {
+        padding: 0.8rem 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none; /* hide desktop nav */
+    }
+
+    /* Enable hamburger menu style if you add one later */
+    .mobile-menu {
+        display: block;
+    }
+
+    /* Make cards and containers stack */
+    .container,
+    .card,
+    .row {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    /* Fix 2-column grids */
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* Fix 3-column grids */
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* Buttons */
+    button,
+    .btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Headshot or avatar */
+    .profile-image {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 1rem auto;
+    }
+}
