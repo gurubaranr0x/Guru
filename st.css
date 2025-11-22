@@ -701,133 +701,112 @@ html {
 
 
 
+/* ================================
+   📱 MOBILE RESPONSIVE FIXES
+   ================================ */
 
-/* ------------------------------
-   GLOBAL MOBILE FIXES
---------------------------------*/
 @media (max-width: 768px) {
-  
-  body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
 
-  /* Fix hero section text alignment */
-  .head {
-    height: auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .title1 {
-    font-size: 2.2rem;
-    line-height: 1.2;
-  }
-
-  .img-circle {
-    width: 180px;
-    height: 180px;
-    margin: 20px auto 0 auto;
-  }
-
-  /* Fix navbar items overflowing */
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav li {
-    margin: 0;
-  }
-
-  /* Fix skills timeline overflowing sidewards */
-  .timeline-list-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .timeline-dot {
-    margin: 0 auto 10px auto;
-  }
-
-  .timeline-date {
-    margin-bottom: 10px;
-  }
-
-  .timeline-content {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Fix contact card */
-  #contact {
-    padding: 30px 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
+  /* NAVBAR */
+  .navbar {
     gap: 20px;
-    text-align: center;
+    padding: 10px 20px;
+    top: 20px;
+  }
+  .navbar a {
+    font-size: 12px;
   }
 
-  /* Fix chatbot box overlapping */
-  .chatbot-widget {
-    width: 90vw;
-    right: 5vw;
-    bottom: 20px;
-  }
-
-  /* Fix widgets/cards overflowing */
-  .card {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-}
-
-@media (max-width: 768px) {
-  #portfolio {
-    padding-top: 120px; /* pushes hero text below navbar */
-  }
-
+  /* HERO SECTION */
   .hero h1 {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 3.2rem;
   }
-
   .hero p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-}
 
+  .image-circle {
+    width: 160px;
+    height: 160px;
+  }
+  .image-circle img {
+    width: 140px;
+    height: 140px;
+  }
 
-/* FORCE contact section to stack on mobile */
-@media (max-width: 768px) {
-    #contact, 
-    .contact-section, 
-    .contact-container {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-        width: 100% !important;
-    }
+  /* ABOUT SECTION */
+  .about {
+    padding: 40px 15px;
+  }
+  .about-container {
+    padding: 20px 15px;
+  }
+  .about h2 {
+    font-size: 2.2rem;
+  }
 
-    /* Left (form) and right (text box) go full width */
-    .contact-left,
-    .contact-right,
-    .contact-form,
-    .contact-box {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
+  /* SKILLS SECTION */
+  .skills-section {
+    padding: 80px 10px;
+  }
+  .skills-section h2 {
+    font-size: 2.4rem;
+  }
+  .skills-timeline {
+    gap: 30px;
+    padding: 30px 10px;
+  }
+  .skill-item span {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
 
-    /* Form fields never overflow */
-    .contact-form input,
-    .contact-form textarea {
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
+  /* PROJECT TIMELINE */
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+  .timeline:before {
+    display: none;
+  }
+  .timeline-item {
+    margin: 30px 0;
+  }
+  .timeline-card {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .timeline-card h3 {
+    font-size: 1.2rem;
+  }
+  .timeline-card p {
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT SECTION */
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 25px 20px;
+  }
+
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 10px;
+  }
+  .footer-logo {
+    font-size: 2rem;
+  }
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
 }
