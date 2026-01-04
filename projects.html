@@ -12,10 +12,10 @@
 <body class="projects-page">
     <nav>
         <div class="container">
-            <div class="logo"><a href="/" style="text-decoration: none; color: inherit;">GB</a></div>
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">GB</a></div>
             <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/#contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="index.html#contact">Contact</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
                     <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -60,8 +60,9 @@
             <div class="container">
                 <div class="filter-group">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="ai">AI & Deep Learning</button>
                     <button class="filter-btn" data-filter="data">Data Science</button>
+                    <button class="filter-btn" data-filter="security">Cyber Security</button>
                     <button class="filter-btn" data-filter="automation">Automation</button>
                 </div>
             </div>
@@ -70,6 +71,116 @@
         <section class="projects-archive">
             <div class="container">
                 <div class="archive-grid">
+                    <!-- Project: Decentralized Key Exchange Protocol -->
+                    <div class="archive-card reveal" data-category="security">
+                        <div class="archive-image">
+                            <img src="/key-exchange.png" alt="Decentralized Key Exchange Protocol">
+                            <div class="card-overlay">
+                                <a href="#" class="view-btn" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <div class="archive-meta">
+                                <span class="year">2024</span>
+                                <span class="tag">Cryptography / AI</span>
+                            </div>
+                            <h3 class="project-name">Decentralized Key Exchange Protocol</h3>
+                            <p class="project-desc">A secure, peer-to-peer key exchange mechanism leveraging
+                                decentralized networks to ensure end-to-end encryption without central authority.</p>
+                            <div class="project-footer">
+                                <div class="tech-stack">
+                                    <span>Rust</span>
+                                    <span>Cryptography</span>
+                                    <span>P2P</span>
+                                </div>
+                                <a href="#" class="repo-link" title="View Source" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Globe Trotter -->
+                    <div class="archive-card reveal" data-category="automation">
+                        <div class="archive-image">
+                            <img src="/globe-trotter.png" alt="Globe Trotter">
+                            <div class="card-overlay">
+                                <a href="#" class="view-btn" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <div class="archive-meta">
+                                <span class="year">2024</span>
+                                <span class="tag">App Development</span>
+                            </div>
+                            <h3 class="project-name">Globe Trotter</h3>
+                            <p class="project-desc">A comprehensive global trip planning application that uses AI to
+                                curate personalized itineraries, manage budgets, and discover hidden gems.</p>
+                            <div class="project-footer">
+                                <div class="tech-stack">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Google Maps API</span>
+                                </div>
+                                <a href="#" class="repo-link" title="View Source" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Optical Guided Super Resolution -->
+                    <div class="archive-card reveal" data-category="ai">
+                        <div class="archive-image">
+                            <img src="/thermal-sr.png" alt="Optical Guided Super Resolution">
+                            <div class="card-overlay">
+                                <a href="#" class="view-btn" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <div class="archive-meta">
+                                <span class="year">2024</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                            <h3 class="project-name">Optical Guided Super Resolution</h3>
+                            <p class="project-desc">Advanced AI model for enhancing thermal imagery resolution using
+                                optical guidance, improving clarity for surveillance and industrial monitoring.</p>
+                            <div class="project-footer">
+                                <div class="tech-stack">
+                                    <span>PyTorch</span>
+                                    <span>GANs</span>
+                                    <span>Thermal Imaging</span>
+                                </div>
+                                <a href="#" class="repo-link" title="View Source" target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Project 1 -->
                     <div class="archive-card reveal" data-category="ai">
                         <div class="archive-image">
@@ -110,7 +221,7 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="archive-card reveal" data-category="ai">
+                    <div class="archive-card reveal" data-category="security">
                         <div class="archive-image">
                             <img src="/phishing.png" alt="Phishing Detector">
                             <div class="card-overlay">
@@ -149,7 +260,7 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="archive-card reveal" data-category="automation">
+                    <div class="archive-card reveal" data-category="data">
                         <div class="archive-image">
                             <img src="/ai-agent.png" alt="AI Research Agent">
                             <div class="card-overlay">
@@ -165,7 +276,7 @@
                         <div class="archive-info">
                             <div class="archive-meta">
                                 <span class="year">2023</span>
-                                <span class="tag">AI / Automation</span>
+                                <span class="tag">Data Science / AI</span>
                             </div>
                             <h3 class="project-name">AI Research Agent</h3>
                             <p class="project-desc">An intelligent web agent that autonomously searches the internet,
@@ -192,10 +303,10 @@
 
         <footer class="footer container">
             <div class="footer-nav-minimal">
-                <a href="/">Home</a>
-                <a href="/#about">About</a>
-                <a href="/#skills">Skills</a>
-                <a href="/#contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact">Contact</a>
             </div>
 
             <div class="footer-bottom-minimal">
